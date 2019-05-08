@@ -1,0 +1,194 @@
+body {
+    margin: 0 auto;
+    background-color: #F2F2F2;
+}
+
+img {
+    width: 100%;
+}
+
+section {
+    margin: 0 auto;
+    max-width: none;
+}
+
+header {
+    width: 100%;
+    position: fixed;
+    top: 0;
+
+}
+
+figure {
+    margin: 1rem;
+}
+
+figcaption {
+    font-family: 'Montserrat', sans-serif;
+    color: #590202;
+    font-size: 0.8rem;
+    font-style: italic;
+}
+
+/*-----------------fonts-------------------*/
+h1,
+h2 {
+    color: #F22613;
+    font-family: 'Kanit', sans-serif;
+    font-size: 2rem;
+}
+
+h3 {
+    font-family: 'Kanit', sans-serif;
+    font-size: 1.4rem;
+    color: #590202;
+}
+
+p,
+footer,
+ul,
+ol {
+    color: #0D0D0D;
+    font-family: 'Lato', sans-serif;
+}
+
+/*-----------------navigation menu-------------------*/
+a {
+    font-family: 'Kanit', sans-serif;
+    color: #590202;
+    font-size: 1rem;
+    text-decoration: none;
+}
+
+/* unvisited link */
+header nav a:link {
+    color: #590202;
+}
+
+/* visited link */
+header nav a:visited {
+    color: #F22613;
+}
+
+/* mouse over link */
+header nav a:hover {
+    color: #F22613;
+}
+
+/* selected link */
+header nav a:active {
+    color: #F22613;
+}
+
+header {
+    position: fixed;
+    background: rgb(255, 255, 255);
+    background: linear-gradient(0deg, rgba(255, 255, 255, 1) 0%, rgba(114, 166, 161, 1) 76%);
+    width: 100%;
+    top: 0;
+}
+
+header nav {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+header nav a {
+    padding: 0.2rem;
+    margin: 0.4rem;
+
+}
+
+/*-----------------Body-----------------*/
+#forside,
+#koncept_maalgruppe,
+#analyse,
+#bert_test,
+#virksomhedsvideo,
+#produktionsplan {
+    border-radius: 10px;
+    border: 5px solid #72A6A1;
+    padding: 0.3rem;
+    margin: 3rem 2rem 3rem 2rem;
+}
+
+#forside .sectionwrapper,
+#koncept_maalgruppe .sectionwrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    flex-direction: row;
+}
+
+#forside .col {
+    flex-grow: 1;
+    flex-basis: 150px;
+    padding: 2px;
+}
+
+#koncept_maalgruppe .col {
+    flex-grow: 1;
+    flex-basis: 300px;
+    padding: 2px;
+}
+
+#bert_test .sectionwrapper,
+#analyse .sectionwrapper {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#bert_test .col,
+#analyse .col {
+    flex-grow: 1;
+    flex-basis: 300px;
+}
+
+#virksomhedsvideo .sectionwrapper {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#virksomhedsvideo .col {
+    margin: 5px;
+    padding: 3px;
+    /*child flex*/
+    flex-grow: 1;
+    flex-basis: 300px;
+    align-self: flex-start;
+    /*parent flex*/
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+/*-----------------Store skærme-----------------*/
+@media only screen and (min-width:640px) {
+    header nav {
+        flex-direction: row;
+        justify-content: flex-end;
+        background-color: rgb(197, 215, 217);
+    }
+
+    header nav a {
+        font-size: 1rem;
+        margin: 0.5rem 0.3rem 0.5rem;
+        padding: 0.2rem 0 0 0.2rem;
+    }
+
+    header nav a:last-child {
+        margin-right: 1rem;
+        padding: 0.2rem 0 0 0.2rem;
+    }
+
+    p {
+        margin: 0.7rem;
+    }
+}
+
+@media only screen and (min-width:1000px) {
+    header nav a {
+        font-size: 1.2rem;
+    }
+}
