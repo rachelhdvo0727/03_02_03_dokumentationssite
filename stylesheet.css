@@ -163,6 +163,14 @@ header nav a {
     justify-content: space-between;
 }
 
+#redesign .wire_one {
+    max-width: 100%;
+    text-align: center;
+
+
+}
+
+
 /*-----------------Store skærme-----------------*/
 @media only screen and (min-width:640px) {
     header nav {
